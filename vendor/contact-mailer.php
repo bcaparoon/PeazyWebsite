@@ -267,7 +267,7 @@ if($_POST)
 
 
     //Server settings
-    $mail->SMTPDebug = SMTP::DEBUG_SERVER;
+    $mail->SMTPDebug = 4;
     $mail->isSMTP();                                            // Send using SMTP
     $mail->Host       = 'smtp.googlemail.com';                  // Set the SMTP server to send through
     $mail->Name       = 'Benjamin Caparoon';                    // Your full name
