@@ -267,6 +267,7 @@ if($_POST)
 
 
     //Server settings
+    $mail->SMTPDebug = SMTP::DEBUG_SERVER;
     $mail->isSMTP();                                            // Send using SMTP
     $mail->Host       = 'smtp.googlemail.com';                  // Set the SMTP server to send through
     $mail->Name       = 'Benjamin Caparoon';                    // Your full name
@@ -278,7 +279,7 @@ if($_POST)
 
     //Recipients
     $mail->setFrom($user_Email,$user_Name);
-    $mail->addAddress($your_email, 'Theme Industry');     // Add a recipient
+    $mail->addAddress($your_email, 'Peazy.io');     // Add a recipient
     $mail->addReplyTo($your_email, 'Information');
 
 
