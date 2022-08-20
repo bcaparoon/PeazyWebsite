@@ -590,7 +590,7 @@
         <div class="row">
             <div class="col-12 col-lg-7">
                 <h4 class="heading text-center text-lg-left">GET IN TOUCH</h4>
-                <form class="row contact-form wow fadeInLeft" id="contact-form-data">
+                <form class="row contact-form wow fadeInLeft" name="contact" netlify>
                     <div class="col-sm-12" id="result"></div>
                     <div class="col-12 col-md-5">
                         <input type="text" name="name" placeholder="Your Name" class="form-control">
@@ -601,11 +601,11 @@
                         <textarea class="form-control" name="message" rows="6" placeholder="Your Message"></textarea>
                     </div>
                     <div class="col-12">
-                        <a href="javascript:void(0);" class="btn yellow-and-black-btn rounded-pill w-100 contact_btn"><i class="fa fa-spinner fa-spin mr-2 d-none" aria-hidden="true"></i> <b>Send Message</b>
-                        </a>
+                        <button class="btn yellow-and-black-btn rounded-pill w-100 contact_btn" type="submit">Send</button>
+                        
                     </div>
                 </form>
-                <form class="row contact-form wow fadeInLeft" name="contact" netlify>
+                <form class="row contact-form wow fadeInLeft" name="contact2" netlify>
                     <div class="col-sm-12" id="result"></div>
                     <div class="col-12 col-md-5">
                     <p>
